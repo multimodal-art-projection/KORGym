@@ -1,0 +1,256 @@
+INFO:     Started server process [13208]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:6091 (Press CTRL+C to quit)
+INFO:     127.0.0.1:41902 - "POST /generate HTTP/1.1" 200 OK
+/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/8-word_puzzle/game_lib.py:355: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+  state = request.dict()
+INFO:     127.0.0.1:41934 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41938 - "POST /generate HTTP/1.1" 200 OK
+/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/8-word_puzzle/game_lib.py:355: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+  state = request.dict()
+INFO:     127.0.0.1:41984 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41988 - "POST /generate HTTP/1.1" 200 OK
+/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/8-word_puzzle/game_lib.py:355: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+  state = request.dict()
+INFO:     127.0.0.1:42010 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42014 - "POST /generate HTTP/1.1" 200 OK
+/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/8-word_puzzle/game_lib.py:355: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+  state = request.dict()
+INFO:     127.0.0.1:42020 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42024 - "POST /generate HTTP/1.1" 200 OK
+/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/8-word_puzzle/game_lib.py:355: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+  state = request.dict()
+INFO:     127.0.0.1:42034 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42038 - "POST /generate HTTP/1.1" 200 OK
+/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/8-word_puzzle/game_lib.py:355: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+  state = request.dict()
+INFO:     127.0.0.1:42066 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42070 - "POST /generate HTTP/1.1" 200 OK
+/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/8-word_puzzle/game_lib.py:355: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+  state = request.dict()
+INFO:     127.0.0.1:42080 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42086 - "POST /generate HTTP/1.1" 200 OK
+/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/8-word_puzzle/game_lib.py:355: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+  state = request.dict()
+INFO:     127.0.0.1:42098 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42102 - "POST /generate HTTP/1.1" 200 OK
+/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/8-word_puzzle/game_lib.py:355: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+  state = request.dict()
+INFO:     127.0.0.1:42132 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42136 - "POST /generate HTTP/1.1" 200 OK
+/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/8-word_puzzle/game_lib.py:355: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+  state = request.dict()
+INFO:     127.0.0.1:42156 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42160 - "POST /generate HTTP/1.1" 200 OK
+/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/8-word_puzzle/game_lib.py:355: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+  state = request.dict()
+INFO:     127.0.0.1:42168 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42172 - "POST /generate HTTP/1.1" 200 OK
+/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/8-word_puzzle/game_lib.py:355: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+  state = request.dict()
+INFO:     127.0.0.1:42354 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42358 - "POST /generate HTTP/1.1" 200 OK
+/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/8-word_puzzle/game_lib.py:355: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+  state = request.dict()
+INFO:     127.0.0.1:42388 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42392 - "POST /generate HTTP/1.1" 200 OK
+/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/8-word_puzzle/game_lib.py:355: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+  state = request.dict()
+INFO:     127.0.0.1:42416 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42420 - "POST /generate HTTP/1.1" 200 OK
+/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/8-word_puzzle/game_lib.py:355: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+  state = request.dict()
+INFO:     127.0.0.1:42436 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42440 - "POST /generate HTTP/1.1" 200 OK
+/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/8-word_puzzle/game_lib.py:355: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+  state = request.dict()
+INFO:     127.0.0.1:42500 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42504 - "POST /generate HTTP/1.1" 200 OK
+/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/8-word_puzzle/game_lib.py:355: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+  state = request.dict()
+INFO:     127.0.0.1:42520 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42524 - "POST /generate HTTP/1.1" 200 OK
+/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/8-word_puzzle/game_lib.py:355: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+  state = request.dict()
+INFO:     127.0.0.1:42576 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42582 - "POST /generate HTTP/1.1" 200 OK
+/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/8-word_puzzle/game_lib.py:355: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+  state = request.dict()
+INFO:     127.0.0.1:44606 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44612 - "POST /generate HTTP/1.1" 200 OK
+/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/8-word_puzzle/game_lib.py:355: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+  state = request.dict()
+INFO:     127.0.0.1:44640 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44644 - "POST /generate HTTP/1.1" 200 OK
+/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/8-word_puzzle/game_lib.py:355: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+  state = request.dict()
+INFO:     127.0.0.1:44996 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45002 - "POST /generate HTTP/1.1" 200 OK
+/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/8-word_puzzle/game_lib.py:355: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+  state = request.dict()
+INFO:     127.0.0.1:45018 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45022 - "POST /generate HTTP/1.1" 200 OK
+/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/8-word_puzzle/game_lib.py:355: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+  state = request.dict()
+INFO:     127.0.0.1:45694 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45700 - "POST /generate HTTP/1.1" 200 OK
+/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/8-word_puzzle/game_lib.py:355: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+  state = request.dict()
+INFO:     127.0.0.1:45900 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45912 - "POST /generate HTTP/1.1" 200 OK
+/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/8-word_puzzle/game_lib.py:355: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+  state = request.dict()
+INFO:     127.0.0.1:46038 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46042 - "POST /generate HTTP/1.1" 200 OK
+/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/8-word_puzzle/game_lib.py:355: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+  state = request.dict()
+INFO:     127.0.0.1:46216 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46220 - "POST /generate HTTP/1.1" 200 OK
+/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/8-word_puzzle/game_lib.py:355: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+  state = request.dict()
+INFO:     127.0.0.1:46292 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46296 - "POST /generate HTTP/1.1" 200 OK
+/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/8-word_puzzle/game_lib.py:355: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+  state = request.dict()
+INFO:     127.0.0.1:46340 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46344 - "POST /generate HTTP/1.1" 200 OK
+/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/8-word_puzzle/game_lib.py:355: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+  state = request.dict()
+INFO:     127.0.0.1:46382 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46386 - "POST /generate HTTP/1.1" 200 OK
+/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/8-word_puzzle/game_lib.py:355: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+  state = request.dict()
+INFO:     127.0.0.1:46424 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46428 - "POST /generate HTTP/1.1" 200 OK
+/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/8-word_puzzle/game_lib.py:355: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+  state = request.dict()
+INFO:     127.0.0.1:46932 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46936 - "POST /generate HTTP/1.1" 200 OK
+/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/8-word_puzzle/game_lib.py:355: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+  state = request.dict()
+INFO:     127.0.0.1:46962 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46966 - "POST /generate HTTP/1.1" 200 OK
+/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/8-word_puzzle/game_lib.py:355: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+  state = request.dict()
+INFO:     127.0.0.1:47174 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47178 - "POST /generate HTTP/1.1" 200 OK
+/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/8-word_puzzle/game_lib.py:355: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+  state = request.dict()
+INFO:     127.0.0.1:47258 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47264 - "POST /generate HTTP/1.1" 200 OK
+/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/8-word_puzzle/game_lib.py:355: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+  state = request.dict()
+INFO:     127.0.0.1:47374 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47378 - "POST /generate HTTP/1.1" 200 OK
+/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/8-word_puzzle/game_lib.py:355: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+  state = request.dict()
+INFO:     127.0.0.1:47386 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47390 - "POST /generate HTTP/1.1" 200 OK
+/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/8-word_puzzle/game_lib.py:355: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+  state = request.dict()
+INFO:     127.0.0.1:47454 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47462 - "POST /generate HTTP/1.1" 200 OK
+/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/8-word_puzzle/game_lib.py:355: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+  state = request.dict()
+INFO:     127.0.0.1:47532 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47538 - "POST /generate HTTP/1.1" 200 OK
+/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/8-word_puzzle/game_lib.py:355: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+  state = request.dict()
+INFO:     127.0.0.1:48016 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48020 - "POST /generate HTTP/1.1" 200 OK
+/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/8-word_puzzle/game_lib.py:355: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+  state = request.dict()
+INFO:     127.0.0.1:48116 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48120 - "POST /generate HTTP/1.1" 200 OK
+/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/8-word_puzzle/game_lib.py:355: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+  state = request.dict()
+INFO:     127.0.0.1:48168 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48172 - "POST /generate HTTP/1.1" 200 OK
+/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/8-word_puzzle/game_lib.py:355: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+  state = request.dict()
+INFO:     127.0.0.1:48218 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48222 - "POST /generate HTTP/1.1" 200 OK
+/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/8-word_puzzle/game_lib.py:355: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+  state = request.dict()
+INFO:     127.0.0.1:48246 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48250 - "POST /generate HTTP/1.1" 200 OK
+/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/8-word_puzzle/game_lib.py:355: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+  state = request.dict()
+INFO:     127.0.0.1:48430 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48434 - "POST /generate HTTP/1.1" 200 OK
+/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/8-word_puzzle/game_lib.py:355: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+  state = request.dict()
+INFO:     127.0.0.1:48502 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48506 - "POST /generate HTTP/1.1" 200 OK
+/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/8-word_puzzle/game_lib.py:355: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+  state = request.dict()
+INFO:     127.0.0.1:48536 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48540 - "POST /generate HTTP/1.1" 200 OK
+/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/8-word_puzzle/game_lib.py:355: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+  state = request.dict()
+INFO:     127.0.0.1:48568 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48572 - "POST /generate HTTP/1.1" 200 OK
+/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/8-word_puzzle/game_lib.py:355: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+  state = request.dict()
+INFO:     127.0.0.1:48800 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48804 - "POST /generate HTTP/1.1" 200 OK
+/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/8-word_puzzle/game_lib.py:355: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+  state = request.dict()
+INFO:     127.0.0.1:48894 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48900 - "POST /generate HTTP/1.1" 200 OK
+/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/8-word_puzzle/game_lib.py:355: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+  state = request.dict()
+INFO:     127.0.0.1:49058 - "POST /print_board HTTP/1.1" 200 OK
+/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/8-word_puzzle/game_lib.py:370: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+  state = request.dict()
+INFO:     127.0.0.1:42242 - "POST /verify HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42246 - "POST /verify HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42250 - "POST /verify HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42254 - "POST /verify HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42258 - "POST /verify HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42262 - "POST /verify HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42266 - "POST /verify HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42272 - "POST /verify HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42276 - "POST /verify HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42280 - "POST /verify HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42286 - "POST /verify HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42290 - "POST /verify HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42294 - "POST /verify HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42298 - "POST /verify HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42302 - "POST /verify HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42306 - "POST /verify HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42310 - "POST /verify HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42314 - "POST /verify HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42318 - "POST /verify HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42322 - "POST /verify HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42326 - "POST /verify HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42330 - "POST /verify HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42334 - "POST /verify HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42338 - "POST /verify HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42342 - "POST /verify HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42346 - "POST /verify HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42350 - "POST /verify HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42354 - "POST /verify HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42358 - "POST /verify HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42362 - "POST /verify HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42366 - "POST /verify HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42370 - "POST /verify HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42374 - "POST /verify HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42378 - "POST /verify HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42382 - "POST /verify HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42386 - "POST /verify HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42390 - "POST /verify HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42394 - "POST /verify HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42398 - "POST /verify HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42402 - "POST /verify HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42406 - "POST /verify HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42412 - "POST /verify HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42416 - "POST /verify HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42420 - "POST /verify HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42424 - "POST /verify HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42428 - "POST /verify HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42432 - "POST /verify HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42436 - "POST /verify HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42440 - "POST /verify HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42444 - "POST /verify HTTP/1.1" 200 OK

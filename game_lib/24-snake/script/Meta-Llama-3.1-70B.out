@@ -1,0 +1,534 @@
+INFO 02-22 18:28:50 api_server.py:495] vLLM API server version 0.6.1.post1
+INFO 02-22 18:28:50 api_server.py:496] args: Namespace(host=None, port=9003, uvicorn_log_level='info', allow_credentials=False, allowed_origins=['*'], allowed_methods=['*'], allowed_headers=['*'], api_key=None, lora_modules=None, prompt_adapters=None, chat_template=None, response_role='assistant', ssl_keyfile=None, ssl_certfile=None, ssl_ca_certs=None, ssl_cert_reqs=0, root_path=None, middleware=[], return_tokens_as_token_ids=False, disable_frontend_multiprocessing=False, enable_auto_tool_choice=False, tool_call_parser=None, model='/map-vepfs/models/jiajun/Llama3/Meta-Llama-3.1-70B', tokenizer=None, skip_tokenizer_init=False, revision=None, code_revision=None, tokenizer_revision=None, tokenizer_mode='auto', trust_remote_code=False, download_dir=None, load_format='auto', config_format='auto', dtype='auto', kv_cache_dtype='auto', quantization_param_path=None, max_model_len=15000, guided_decoding_backend='outlines', distributed_executor_backend=None, worker_use_ray=False, pipeline_parallel_size=2, tensor_parallel_size=4, max_parallel_loading_workers=None, ray_workers_use_nsight=False, block_size=16, enable_prefix_caching=False, disable_sliding_window=False, use_v2_block_manager=False, num_lookahead_slots=0, seed=0, swap_space=4, cpu_offload_gb=0, gpu_memory_utilization=0.95, num_gpu_blocks_override=None, max_num_batched_tokens=None, max_num_seqs=256, max_logprobs=20, disable_log_stats=False, quantization=None, rope_scaling=None, rope_theta=None, enforce_eager=False, max_context_len_to_capture=None, max_seq_len_to_capture=8192, disable_custom_all_reduce=False, tokenizer_pool_size=0, tokenizer_pool_type='ray', tokenizer_pool_extra_config=None, limit_mm_per_prompt=None, enable_lora=False, max_loras=1, max_lora_rank=16, lora_extra_vocab_size=256, lora_dtype='auto', long_lora_scaling_factors=None, max_cpu_loras=None, fully_sharded_loras=False, enable_prompt_adapter=False, max_prompt_adapters=1, max_prompt_adapter_token=0, device='auto', num_scheduler_steps=1, scheduler_delay_factor=0.0, enable_chunked_prefill=None, speculative_model=None, speculative_model_quantization=None, num_speculative_tokens=None, speculative_draft_tensor_parallel_size=None, speculative_max_model_len=None, speculative_disable_by_batch_size=None, ngram_prompt_lookup_max=None, ngram_prompt_lookup_min=None, spec_decoding_acceptance_method='rejection_sampler', typical_acceptance_sampler_posterior_threshold=None, typical_acceptance_sampler_posterior_alpha=None, disable_logprobs_during_spec_decoding=None, model_loader_extra_config=None, ignore_patterns=[], preemption_mode=None, served_model_name=['Meta-Llama-3.1-70B'], qlora_adapter_name_or_path=None, otlp_traces_endpoint=None, collect_detailed_traces=None, disable_async_output_proc=False, override_neuron_config=None, disable_log_requests=False, max_log_len=None)
+INFO 02-22 18:28:50 api_server.py:162] Multiprocessing frontend to use ipc:///tmp/a52a7d4f-d160-41db-9b02-5f7773a0cb3e for RPC Path.
+INFO 02-22 18:28:50 api_server.py:178] Started engine process with PID 634
+INFO 02-22 18:28:54 config.py:904] Defaulting to use mp for distributed inference
+WARNING 02-22 18:28:54 config.py:364] Async output processing can not be enabled with pipeline parallel
+INFO 02-22 18:28:54 llm_engine.py:223] Initializing an LLM engine (v0.6.1.post1) with config: model='/map-vepfs/models/jiajun/Llama3/Meta-Llama-3.1-70B', speculative_config=None, tokenizer='/map-vepfs/models/jiajun/Llama3/Meta-Llama-3.1-70B', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config=None, rope_scaling=None, rope_theta=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=15000, download_dir=None, load_format=LoadFormat.AUTO, tensor_parallel_size=4, pipeline_parallel_size=2, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto, quantization_param_path=None, device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='outlines'), observability_config=ObservabilityConfig(otlp_traces_endpoint=None, collect_model_forward_time=False, collect_model_execute_time=False), seed=0, served_model_name=Meta-Llama-3.1-70B, use_v2_block_manager=False, num_scheduler_steps=1, enable_prefix_caching=False, use_async_output_proc=False)
+WARNING 02-22 18:28:54 multiproc_gpu_executor.py:56] Reducing Torch parallelism from 64 threads to 1 to avoid unnecessary CPU contention. Set OMP_NUM_THREADS in the external environment to tune this value as needed.
+INFO 02-22 18:28:54 custom_cache_manager.py:17] Setting Triton cache manager to: vllm.triton_utils.custom_cache_manager:CustomCacheManager
+[1;36m(VllmWorkerProcess pid=779)[0;0m INFO 02-22 18:28:55 multiproc_worker_utils.py:215] Worker ready; awaiting tasks
+[1;36m(VllmWorkerProcess pid=775)[0;0m INFO 02-22 18:28:55 multiproc_worker_utils.py:215] Worker ready; awaiting tasks
+[1;36m(VllmWorkerProcess pid=776)[0;0m INFO 02-22 18:28:55 multiproc_worker_utils.py:215] Worker ready; awaiting tasks
+[1;36m(VllmWorkerProcess pid=777)[0;0m INFO 02-22 18:28:55 multiproc_worker_utils.py:215] Worker ready; awaiting tasks
+[1;36m(VllmWorkerProcess pid=778)[0;0m INFO 02-22 18:28:55 multiproc_worker_utils.py:215] Worker ready; awaiting tasks
+[1;36m(VllmWorkerProcess pid=773)[0;0m INFO 02-22 18:28:55 multiproc_worker_utils.py:215] Worker ready; awaiting tasks
+[1;36m(VllmWorkerProcess pid=774)[0;0m INFO 02-22 18:28:55 multiproc_worker_utils.py:215] Worker ready; awaiting tasks
+INFO 02-22 18:28:57 utils.py:981] Found nccl from library libnccl.so.2
+[1;36m(VllmWorkerProcess pid=774)[0;0m INFO 02-22 18:28:57 utils.py:981] Found nccl from library libnccl.so.2
+[1;36m(VllmWorkerProcess pid=773)[0;0m INFO 02-22 18:28:57 utils.py:981] Found nccl from library libnccl.so.2
+[1;36m(VllmWorkerProcess pid=774)[0;0m INFO 02-22 18:28:57 pynccl.py:63] vLLM is using nccl==2.20.5
+INFO 02-22 18:28:57 pynccl.py:63] vLLM is using nccl==2.20.5
+[1;36m(VllmWorkerProcess pid=773)[0;0m INFO 02-22 18:28:57 pynccl.py:63] vLLM is using nccl==2.20.5
+[1;36m(VllmWorkerProcess pid=775)[0;0m INFO 02-22 18:28:57 utils.py:981] Found nccl from library libnccl.so.2
+[1;36m(VllmWorkerProcess pid=775)[0;0m INFO 02-22 18:28:57 pynccl.py:63] vLLM is using nccl==2.20.5
+[1;36m(VllmWorkerProcess pid=778)[0;0m INFO 02-22 18:28:57 utils.py:981] Found nccl from library libnccl.so.2
+[1;36m(VllmWorkerProcess pid=776)[0;0m INFO 02-22 18:28:57 utils.py:981] Found nccl from library libnccl.so.2
+[1;36m(VllmWorkerProcess pid=777)[0;0m INFO 02-22 18:28:57 utils.py:981] Found nccl from library libnccl.so.2
+[1;36m(VllmWorkerProcess pid=778)[0;0m INFO 02-22 18:28:57 pynccl.py:63] vLLM is using nccl==2.20.5
+[1;36m(VllmWorkerProcess pid=776)[0;0m INFO 02-22 18:28:57 pynccl.py:63] vLLM is using nccl==2.20.5
+[1;36m(VllmWorkerProcess pid=779)[0;0m INFO 02-22 18:28:57 utils.py:981] Found nccl from library libnccl.so.2
+[1;36m(VllmWorkerProcess pid=777)[0;0m INFO 02-22 18:28:57 pynccl.py:63] vLLM is using nccl==2.20.5
+[1;36m(VllmWorkerProcess pid=779)[0;0m INFO 02-22 18:28:57 pynccl.py:63] vLLM is using nccl==2.20.5
+INFO 02-22 18:28:58 custom_all_reduce_utils.py:204] generating GPU P2P access cache in /root/.cache/vllm/gpu_p2p_access_cache_for_0,1,2,3,4,5,6,7.json
+INFO 02-22 18:29:21 custom_all_reduce_utils.py:242] reading GPU P2P access cache from /root/.cache/vllm/gpu_p2p_access_cache_for_0,1,2,3,4,5,6,7.json
+[1;36m(VllmWorkerProcess pid=773)[0;0m INFO 02-22 18:29:21 custom_all_reduce_utils.py:242] reading GPU P2P access cache from /root/.cache/vllm/gpu_p2p_access_cache_for_0,1,2,3,4,5,6,7.json
+[1;36m(VllmWorkerProcess pid=776)[0;0m INFO 02-22 18:29:21 custom_all_reduce_utils.py:242] reading GPU P2P access cache from /root/.cache/vllm/gpu_p2p_access_cache_for_0,1,2,3,4,5,6,7.json
+[1;36m(VllmWorkerProcess pid=777)[0;0m INFO 02-22 18:29:21 custom_all_reduce_utils.py:242] reading GPU P2P access cache from /root/.cache/vllm/gpu_p2p_access_cache_for_0,1,2,3,4,5,6,7.json
+[1;36m(VllmWorkerProcess pid=778)[0;0m INFO 02-22 18:29:21 custom_all_reduce_utils.py:242] reading GPU P2P access cache from /root/.cache/vllm/gpu_p2p_access_cache_for_0,1,2,3,4,5,6,7.json
+[1;36m(VllmWorkerProcess pid=775)[0;0m INFO 02-22 18:29:21 custom_all_reduce_utils.py:242] reading GPU P2P access cache from /root/.cache/vllm/gpu_p2p_access_cache_for_0,1,2,3,4,5,6,7.json
+[1;36m(VllmWorkerProcess pid=779)[0;0m INFO 02-22 18:29:21 custom_all_reduce_utils.py:242] reading GPU P2P access cache from /root/.cache/vllm/gpu_p2p_access_cache_for_0,1,2,3,4,5,6,7.json
+[1;36m(VllmWorkerProcess pid=774)[0;0m INFO 02-22 18:29:21 custom_all_reduce_utils.py:242] reading GPU P2P access cache from /root/.cache/vllm/gpu_p2p_access_cache_for_0,1,2,3,4,5,6,7.json
+[1;36m(VllmWorkerProcess pid=776)[0;0m INFO 02-22 18:29:21 shm_broadcast.py:235] vLLM message queue communication handle: Handle(connect_ip='127.0.0.1', local_reader_ranks=[1, 2, 3], buffer=<vllm.distributed.device_communicators.shm_broadcast.ShmRingBuffer object at 0x7f378cb64fd0>, local_subscribe_port=60763, remote_subscribe_port=None)
+INFO 02-22 18:29:21 shm_broadcast.py:235] vLLM message queue communication handle: Handle(connect_ip='127.0.0.1', local_reader_ranks=[1, 2, 3], buffer=<vllm.distributed.device_communicators.shm_broadcast.ShmRingBuffer object at 0x7f378cb712d0>, local_subscribe_port=36787, remote_subscribe_port=None)
+[1;36m(VllmWorkerProcess pid=779)[0;0m INFO 02-22 18:29:21 utils.py:981] Found nccl from library libnccl.so.2
+[1;36m(VllmWorkerProcess pid=775)[0;0m INFO 02-22 18:29:21 utils.py:981] Found nccl from library libnccl.so.2
+[1;36m(VllmWorkerProcess pid=779)[0;0m INFO 02-22 18:29:21 pynccl.py:63] vLLM is using nccl==2.20.5
+[1;36m(VllmWorkerProcess pid=775)[0;0m INFO 02-22 18:29:21 pynccl.py:63] vLLM is using nccl==2.20.5
+[1;36m(VllmWorkerProcess pid=778)[0;0m INFO 02-22 18:29:21 utils.py:981] Found nccl from library libnccl.so.2
+[1;36m(VllmWorkerProcess pid=774)[0;0m INFO 02-22 18:29:21 utils.py:981] Found nccl from library libnccl.so.2
+[1;36m(VllmWorkerProcess pid=778)[0;0m INFO 02-22 18:29:21 pynccl.py:63] vLLM is using nccl==2.20.5
+[1;36m(VllmWorkerProcess pid=776)[0;0m INFO 02-22 18:29:21 utils.py:981] Found nccl from library libnccl.so.2
+INFO 02-22 18:29:21 utils.py:981] Found nccl from library libnccl.so.2
+[1;36m(VllmWorkerProcess pid=777)[0;0m INFO 02-22 18:29:21 utils.py:981] Found nccl from library libnccl.so.2
+[1;36m(VllmWorkerProcess pid=773)[0;0m INFO 02-22 18:29:21 utils.py:981] Found nccl from library libnccl.so.2
+[1;36m(VllmWorkerProcess pid=774)[0;0m INFO 02-22 18:29:21 pynccl.py:63] vLLM is using nccl==2.20.5
+[1;36m(VllmWorkerProcess pid=776)[0;0m INFO 02-22 18:29:21 pynccl.py:63] vLLM is using nccl==2.20.5
+INFO 02-22 18:29:21 pynccl.py:63] vLLM is using nccl==2.20.5
+[1;36m(VllmWorkerProcess pid=777)[0;0m INFO 02-22 18:29:21 pynccl.py:63] vLLM is using nccl==2.20.5
+[1;36m(VllmWorkerProcess pid=773)[0;0m INFO 02-22 18:29:21 pynccl.py:63] vLLM is using nccl==2.20.5
+[1;36m(VllmWorkerProcess pid=778)[0;0m INFO 02-22 18:29:22 model_runner.py:997] Starting to load model /map-vepfs/models/jiajun/Llama3/Meta-Llama-3.1-70B...
+[1;36m(VllmWorkerProcess pid=776)[0;0m INFO 02-22 18:29:22 model_runner.py:997] Starting to load model /map-vepfs/models/jiajun/Llama3/Meta-Llama-3.1-70B...
+INFO 02-22 18:29:22 model_runner.py:997] Starting to load model /map-vepfs/models/jiajun/Llama3/Meta-Llama-3.1-70B...
+[1;36m(VllmWorkerProcess pid=777)[0;0m INFO 02-22 18:29:22 model_runner.py:997] Starting to load model /map-vepfs/models/jiajun/Llama3/Meta-Llama-3.1-70B...
+[1;36m(VllmWorkerProcess pid=774)[0;0m INFO 02-22 18:29:22 model_runner.py:997] Starting to load model /map-vepfs/models/jiajun/Llama3/Meta-Llama-3.1-70B...
+[1;36m(VllmWorkerProcess pid=773)[0;0m INFO 02-22 18:29:22 model_runner.py:997] Starting to load model /map-vepfs/models/jiajun/Llama3/Meta-Llama-3.1-70B...
+[1;36m(VllmWorkerProcess pid=775)[0;0m INFO 02-22 18:29:22 model_runner.py:997] Starting to load model /map-vepfs/models/jiajun/Llama3/Meta-Llama-3.1-70B...
+[1;36m(VllmWorkerProcess pid=779)[0;0m INFO 02-22 18:29:22 model_runner.py:997] Starting to load model /map-vepfs/models/jiajun/Llama3/Meta-Llama-3.1-70B...
+INFO 02-22 18:30:47 model_runner.py:1008] Loading model weights took 16.4602 GB
+[1;36m(VllmWorkerProcess pid=775)[0;0m INFO 02-22 18:30:48 model_runner.py:1008] Loading model weights took 16.4602 GB
+[1;36m(VllmWorkerProcess pid=773)[0;0m INFO 02-22 18:30:48 model_runner.py:1008] Loading model weights took 16.4602 GB
+[1;36m(VllmWorkerProcess pid=774)[0;0m INFO 02-22 18:30:48 model_runner.py:1008] Loading model weights took 16.4602 GB
+[1;36m(VllmWorkerProcess pid=776)[0;0m INFO 02-22 18:30:48 model_runner.py:1008] Loading model weights took 16.4602 GB
+[1;36m(VllmWorkerProcess pid=778)[0;0m INFO 02-22 18:30:48 model_runner.py:1008] Loading model weights took 16.4602 GB
+[1;36m(VllmWorkerProcess pid=779)[0;0m INFO 02-22 18:30:48 model_runner.py:1008] Loading model weights took 16.4602 GB
+[1;36m(VllmWorkerProcess pid=777)[0;0m INFO 02-22 18:30:48 model_runner.py:1008] Loading model weights took 16.4602 GB
+INFO 02-22 18:30:51 distributed_gpu_executor.py:57] # GPU blocks: 89418, # CPU blocks: 6553
+[1;36m(VllmWorkerProcess pid=773)[0;0m INFO 02-22 18:30:54 model_runner.py:1309] Capturing the model for CUDA graphs. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI.
+[1;36m(VllmWorkerProcess pid=773)[0;0m INFO 02-22 18:30:54 model_runner.py:1313] CUDA graphs can take additional 1~3 GiB memory per GPU. If you are running out of memory, consider decreasing `gpu_memory_utilization` or enforcing eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+[1;36m(VllmWorkerProcess pid=775)[0;0m INFO 02-22 18:30:54 model_runner.py:1309] Capturing the model for CUDA graphs. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI.
+[1;36m(VllmWorkerProcess pid=775)[0;0m INFO 02-22 18:30:54 model_runner.py:1313] CUDA graphs can take additional 1~3 GiB memory per GPU. If you are running out of memory, consider decreasing `gpu_memory_utilization` or enforcing eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+[1;36m(VllmWorkerProcess pid=779)[0;0m INFO 02-22 18:30:54 model_runner.py:1309] Capturing the model for CUDA graphs. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI.
+[1;36m(VllmWorkerProcess pid=779)[0;0m INFO 02-22 18:30:54 model_runner.py:1313] CUDA graphs can take additional 1~3 GiB memory per GPU. If you are running out of memory, consider decreasing `gpu_memory_utilization` or enforcing eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+[1;36m(VllmWorkerProcess pid=776)[0;0m INFO 02-22 18:30:54 model_runner.py:1309] Capturing the model for CUDA graphs. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI.
+[1;36m(VllmWorkerProcess pid=776)[0;0m INFO 02-22 18:30:54 model_runner.py:1313] CUDA graphs can take additional 1~3 GiB memory per GPU. If you are running out of memory, consider decreasing `gpu_memory_utilization` or enforcing eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+[1;36m(VllmWorkerProcess pid=778)[0;0m INFO 02-22 18:30:54 model_runner.py:1309] Capturing the model for CUDA graphs. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI.
+[1;36m(VllmWorkerProcess pid=778)[0;0m INFO 02-22 18:30:54 model_runner.py:1313] CUDA graphs can take additional 1~3 GiB memory per GPU. If you are running out of memory, consider decreasing `gpu_memory_utilization` or enforcing eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+[1;36m(VllmWorkerProcess pid=777)[0;0m INFO 02-22 18:30:54 model_runner.py:1309] Capturing the model for CUDA graphs. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI.
+[1;36m(VllmWorkerProcess pid=777)[0;0m INFO 02-22 18:30:54 model_runner.py:1313] CUDA graphs can take additional 1~3 GiB memory per GPU. If you are running out of memory, consider decreasing `gpu_memory_utilization` or enforcing eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+INFO 02-22 18:30:54 model_runner.py:1309] Capturing the model for CUDA graphs. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI.
+[1;36m(VllmWorkerProcess pid=774)[0;0m INFO 02-22 18:30:54 model_runner.py:1309] Capturing the model for CUDA graphs. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI.
+INFO 02-22 18:30:54 model_runner.py:1313] CUDA graphs can take additional 1~3 GiB memory per GPU. If you are running out of memory, consider decreasing `gpu_memory_utilization` or enforcing eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+[1;36m(VllmWorkerProcess pid=774)[0;0m INFO 02-22 18:30:54 model_runner.py:1313] CUDA graphs can take additional 1~3 GiB memory per GPU. If you are running out of memory, consider decreasing `gpu_memory_utilization` or enforcing eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+[1;36m(VllmWorkerProcess pid=779)[0;0m INFO 02-22 18:31:18 custom_all_reduce.py:223] Registering 5600 cuda graph addresses
+[1;36m(VllmWorkerProcess pid=777)[0;0m INFO 02-22 18:31:18 custom_all_reduce.py:223] Registering 5600 cuda graph addresses
+[1;36m(VllmWorkerProcess pid=778)[0;0m INFO 02-22 18:31:18 custom_all_reduce.py:223] Registering 5600 cuda graph addresses
+[1;36m(VllmWorkerProcess pid=776)[0;0m INFO 02-22 18:31:18 custom_all_reduce.py:223] Registering 5600 cuda graph addresses
+[1;36m(VllmWorkerProcess pid=777)[0;0m INFO 02-22 18:31:18 model_runner.py:1428] Graph capturing finished in 24 secs.
+[1;36m(VllmWorkerProcess pid=778)[0;0m INFO 02-22 18:31:18 model_runner.py:1428] Graph capturing finished in 24 secs.
+[1;36m(VllmWorkerProcess pid=776)[0;0m INFO 02-22 18:31:18 model_runner.py:1428] Graph capturing finished in 24 secs.
+[1;36m(VllmWorkerProcess pid=779)[0;0m INFO 02-22 18:31:18 model_runner.py:1428] Graph capturing finished in 24 secs.
+[1;36m(VllmWorkerProcess pid=775)[0;0m INFO 02-22 18:31:18 custom_all_reduce.py:223] Registering 5670 cuda graph addresses
+[1;36m(VllmWorkerProcess pid=773)[0;0m INFO 02-22 18:31:18 custom_all_reduce.py:223] Registering 5670 cuda graph addresses
+INFO 02-22 18:31:18 custom_all_reduce.py:223] Registering 5670 cuda graph addresses
+[1;36m(VllmWorkerProcess pid=774)[0;0m INFO 02-22 18:31:18 custom_all_reduce.py:223] Registering 5670 cuda graph addresses
+[1;36m(VllmWorkerProcess pid=775)[0;0m INFO 02-22 18:31:18 model_runner.py:1428] Graph capturing finished in 24 secs.
+[1;36m(VllmWorkerProcess pid=773)[0;0m INFO 02-22 18:31:18 model_runner.py:1428] Graph capturing finished in 24 secs.
+INFO 02-22 18:31:18 model_runner.py:1428] Graph capturing finished in 24 secs.
+[1;36m(VllmWorkerProcess pid=774)[0;0m INFO 02-22 18:31:18 model_runner.py:1428] Graph capturing finished in 24 secs.
+INFO 02-22 18:31:19 api_server.py:226] vLLM to use /tmp/tmpfsn5cqr0 as PROMETHEUS_MULTIPROC_DIR
+WARNING 02-22 18:31:19 serving_embedding.py:190] embedding_mode is False. Embedding API will not work.
+INFO 02-22 18:31:19 launcher.py:20] Available routes are:
+INFO 02-22 18:31:19 launcher.py:28] Route: /openapi.json, Methods: GET, HEAD
+INFO 02-22 18:31:19 launcher.py:28] Route: /docs, Methods: GET, HEAD
+INFO 02-22 18:31:19 launcher.py:28] Route: /docs/oauth2-redirect, Methods: GET, HEAD
+INFO 02-22 18:31:19 launcher.py:28] Route: /redoc, Methods: GET, HEAD
+INFO 02-22 18:31:19 launcher.py:28] Route: /health, Methods: GET
+INFO 02-22 18:31:19 launcher.py:28] Route: /tokenize, Methods: POST
+INFO 02-22 18:31:19 launcher.py:28] Route: /detokenize, Methods: POST
+INFO 02-22 18:31:19 launcher.py:28] Route: /v1/models, Methods: GET
+INFO 02-22 18:31:19 launcher.py:28] Route: /version, Methods: GET
+INFO 02-22 18:31:19 launcher.py:28] Route: /v1/chat/completions, Methods: POST
+INFO 02-22 18:31:19 launcher.py:28] Route: /v1/completions, Methods: POST
+INFO 02-22 18:31:19 launcher.py:28] Route: /v1/embeddings, Methods: POST
+INFO 02-22 18:31:19 launcher.py:33] Launching Uvicorn with --limit_concurrency 32765. To avoid this limit at the expense of performance run with --disable-frontend-multiprocessing
+INFO 02-22 18:31:29 metrics.py:351] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 0.0 tokens/s, Running: 0 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 0.0%, CPU KV cache usage: 0.0%.
+INFO 02-22 18:31:39 metrics.py:351] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 0.0 tokens/s, Running: 0 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 0.0%, CPU KV cache usage: 0.0%.
+INFO 02-22 18:31:49 metrics.py:351] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 0.0 tokens/s, Running: 0 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 0.0%, CPU KV cache usage: 0.0%.
+INFO 02-22 18:31:59 metrics.py:351] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 0.0 tokens/s, Running: 0 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 0.0%, CPU KV cache usage: 0.0%.
+INFO 02-22 18:32:09 metrics.py:351] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 0.0 tokens/s, Running: 0 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 0.0%, CPU KV cache usage: 0.0%.
+INFO 02-22 18:32:19 metrics.py:351] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 0.0 tokens/s, Running: 0 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 0.0%, CPU KV cache usage: 0.0%.
+INFO 02-22 18:32:29 metrics.py:351] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 0.0 tokens/s, Running: 0 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 0.0%, CPU KV cache usage: 0.0%.
+INFO 02-22 18:32:39 metrics.py:351] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 0.0 tokens/s, Running: 0 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 0.0%, CPU KV cache usage: 0.0%.
+ERROR 02-22 18:32:42 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:33760 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:42 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:33772 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:42 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:33780 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:42 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:33792 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:42 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:33802 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:42 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:33816 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:42 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:33822 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:42 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:33832 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:42 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:33846 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:42 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:33860 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:42 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:33864 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:42 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:33870 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:42 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:33884 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:42 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:33898 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:42 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:33910 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:42 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:33920 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:42 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:33930 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:42 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:33934 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:42 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:33936 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:42 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:33948 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:42 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:33960 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:42 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:33968 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:42 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:33976 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:42 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:33980 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:42 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:33988 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:42 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:33994 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:42 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34008 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:43 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34010 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:43 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34020 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:43 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34028 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:43 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34040 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:43 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34044 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:43 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34060 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:43 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34062 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:43 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34078 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:43 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34094 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:43 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34100 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:43 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34106 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:43 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34114 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:43 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34126 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:43 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34140 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:43 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34156 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:43 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34162 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:43 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34170 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:43 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34172 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:43 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34178 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:43 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34192 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:43 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34198 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:43 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34208 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:43 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34224 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:43 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34234 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:43 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34244 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:43 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34250 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:43 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34258 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:43 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34262 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:43 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34266 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:43 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34268 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:43 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34274 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:43 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34288 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:43 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34300 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:43 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34316 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:43 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34328 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:43 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34334 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:43 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34348 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:44 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34350 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:44 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34366 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:44 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34374 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:44 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34388 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:44 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34404 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:44 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34412 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:44 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34418 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:44 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34424 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:44 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34428 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:44 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34436 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:44 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34452 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:44 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34454 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:44 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34468 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:44 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34484 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:44 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34500 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:44 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34506 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:44 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34512 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:44 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34516 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:44 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34522 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:44 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34528 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:44 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34536 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:44 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34548 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:44 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34552 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:44 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34562 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:44 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34568 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:44 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34580 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:44 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34592 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:44 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34598 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:44 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34610 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:44 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34622 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:44 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34624 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:44 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34630 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:44 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34640 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:44 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34654 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:44 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34658 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:44 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34668 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:44 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34682 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:45 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34686 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:45 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34698 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:45 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34704 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:45 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34720 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:45 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34728 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:45 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34730 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:45 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34732 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:45 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34742 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:45 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34746 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:45 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34760 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:45 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34766 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:45 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34782 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:45 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34784 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:45 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34792 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:45 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34804 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:45 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34814 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:45 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34826 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:45 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34832 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:45 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34840 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:45 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34844 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:45 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34856 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:45 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34864 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:45 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34880 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:45 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34896 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:45 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34904 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:45 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34912 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:45 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34916 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:45 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34920 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:45 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34924 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:45 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34934 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:45 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34940 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:45 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34956 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:45 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34968 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:45 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:34984 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:45 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35000 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:45 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35002 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:46 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35008 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:46 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35018 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:46 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35026 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:46 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35028 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:46 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35040 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:46 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35042 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:46 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35052 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:46 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35066 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:46 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35070 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:46 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35086 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:46 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35096 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:46 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35104 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:46 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35116 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:46 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35124 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:46 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35126 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:46 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35134 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:46 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35140 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:46 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35148 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:46 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35164 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:46 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35180 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:46 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35188 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:46 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35192 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:46 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35204 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:46 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35220 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:46 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35236 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:46 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35244 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:46 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35256 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:46 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35266 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:46 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35278 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:46 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35294 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:46 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35302 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:46 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35306 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:46 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35312 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:46 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35320 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:46 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35336 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:46 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35352 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:46 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35366 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:47 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35372 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:47 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35382 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:47 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35392 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:47 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35398 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:47 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35402 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:47 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35412 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:47 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35422 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:47 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35426 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:47 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35428 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:47 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35442 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:47 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35450 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:47 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35456 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:47 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35472 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:47 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35482 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:47 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35496 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:47 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35510 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:47 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35512 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:47 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35526 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:47 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35540 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:47 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35554 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:47 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35564 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:47 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35574 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:47 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35576 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:47 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35584 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:47 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35594 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+ERROR 02-22 18:32:47 serving_chat.py:147] Error in applying chat template from request: As of transformers v4.44, default chat template is no longer allowed, so you must provide a chat template if the tokenizer does not define one.
+INFO:     ::1:35600 - "POST /v1/chat/completions HTTP/1.1" 400 Bad Request
+INFO 02-22 18:32:49 metrics.py:351] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 0.0 tokens/s, Running: 0 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 0.0%, CPU KV cache usage: 0.0%.
+INFO 02-22 18:32:59 metrics.py:351] Avg prompt throughput: 0.0 tokens/s, Avg generation throughput: 0.0 tokens/s, Running: 0 reqs, Swapped: 0 reqs, Pending: 0 reqs, GPU KV cache usage: 0.0%, CPU KV cache usage: 0.0%.

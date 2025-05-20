@@ -1,0 +1,5 @@
+Doubao-1.5-pro-32k_250115_100creatures_50question: 0.26
+Qwen2.5-72B-Instruct_alien_100creatures_50question: 0.18
+Qwen2.5-7B-Instruct_alien_100creatures_50question: 0.04
+DeepSeek-R1-Distill-Qwen-32B_alien_100creatures_50question: 0.34
+DeepSeek-R1-Distill-Llama-70B_alien_100creatures_50question: 0.38

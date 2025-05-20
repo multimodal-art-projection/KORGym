@@ -1,0 +1,5 @@
+ep-20250226145008-h97kr_partytime_100person_50question: 0.12
+DeepSeek-R1-Distill-Qwen-32B_partytime_100person_50question: 0.28
+DeepSeek-R1-Distill-Llama-70B_partytime_100person_50question: 0.5
+Qwen2.5-7B-Instruct_partytime_100person_50question: 0.0
+Qwen2.5-72B-Instruct_partytime_100person_50question: 0.1

@@ -1,0 +1,9 @@
+ep-20250226145008-h97kr_emoji_connect_4emojinum_scale[4, 4]_question: 0.38
+ep-20250226145008-h97kr_emoji_connect_4emojinum_scale[4, 4]_question: 0.42
+Qwen2.5-72B-Instruct_emoji_connect_4emojinum_scale[4, 4]_question: 0.32
+DeepSeek-R1-Distill-Llama-70B_emoji_connect_4emojinum_scale[4, 4]_question: 0.98
+DeepSeek-R1-Distill-Qwen-32B_emoji_connect_4emojinum_scale[4, 4]_question: 0.68
+DeepSeek-R1-Distill-Llama-70B_emoji_connect_5emojinum_scale[7, 7]_question: 0.5
+DeepSeek-R1-Distill-Llama-70B_emoji_connect_5emojinum_scale[7, 7]_question: 0.5
+DeepSeek-R1-Distill-Qwen-32B_emoji_connect_5emojinum_scale[7, 7]_question: 0.1
+ep-20250226145008-h97kr_emoji_connect_5emojinum_scale[7, 7]_question: 0.04

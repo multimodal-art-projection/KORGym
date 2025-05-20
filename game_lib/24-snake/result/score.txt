@@ -1,0 +1,14 @@
+Qwen2.5-7B_snake_50epoch: 0.26
+Qwen2.5-7B-Instruct_snake_50epoch: 0.38
+Qwen2.5-14B-Instruct_snake_50epoch: 0.4
+Qwen2.5-32B_snake_50epoch: 0.58
+Qwen2.5-32B-Instruct_snake_50epoch: 0.56
+Qwen2.5-72B_snake_50epoch: 0.66
+Qwen2.5-72B-Instruct_snake_50epoch: 0.62
+Meta-Llama-3.1-8B-Instruct_snake_50epoch: 0.38
+Meta-Llama-3.1-70B_snake_50epoch: 0.38
+Meta-Llama-3.1-70B-Instruct_snake_50epoch: 0.78
+DeepSeek-R1-Distill-Qwen-32B_snake_50epoch: 7.48
+Doubao-lite-32k_240828_snake_50epoch: 0.58
+Doubao-1.5-pro-32k_250115_snake_50epoch: 1.86
+DeepSeek-R1-Distill-Llama-70B_snake_50epoch: 9.24

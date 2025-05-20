@@ -1,0 +1,107 @@
+INFO 02-23 02:32:32 api_server.py:495] vLLM API server version 0.6.1.post1
+INFO 02-23 02:32:32 api_server.py:496] args: Namespace(host=None, port=9003, uvicorn_log_level='info', allow_credentials=False, allowed_origins=['*'], allowed_methods=['*'], allowed_headers=['*'], api_key=None, lora_modules=None, prompt_adapters=None, chat_template=None, response_role='assistant', ssl_keyfile=None, ssl_certfile=None, ssl_ca_certs=None, ssl_cert_reqs=0, root_path=None, middleware=[], return_tokens_as_token_ids=False, disable_frontend_multiprocessing=False, enable_auto_tool_choice=False, tool_call_parser=None, model='/map-vepfs/models/jiajun/Llama3/Meta-Llama-3.1-8B-Instruct', tokenizer=None, skip_tokenizer_init=False, revision=None, code_revision=None, tokenizer_revision=None, tokenizer_mode='auto', trust_remote_code=False, download_dir=None, load_format='auto', config_format='auto', dtype='auto', kv_cache_dtype='auto', quantization_param_path=None, max_model_len=15000, guided_decoding_backend='outlines', distributed_executor_backend=None, worker_use_ray=False, pipeline_parallel_size=1, tensor_parallel_size=2, max_parallel_loading_workers=None, ray_workers_use_nsight=False, block_size=16, enable_prefix_caching=False, disable_sliding_window=False, use_v2_block_manager=False, num_lookahead_slots=0, seed=0, swap_space=4, cpu_offload_gb=0, gpu_memory_utilization=0.95, num_gpu_blocks_override=None, max_num_batched_tokens=None, max_num_seqs=256, max_logprobs=20, disable_log_stats=False, quantization=None, rope_scaling=None, rope_theta=None, enforce_eager=False, max_context_len_to_capture=None, max_seq_len_to_capture=8192, disable_custom_all_reduce=False, tokenizer_pool_size=0, tokenizer_pool_type='ray', tokenizer_pool_extra_config=None, limit_mm_per_prompt=None, enable_lora=False, max_loras=1, max_lora_rank=16, lora_extra_vocab_size=256, lora_dtype='auto', long_lora_scaling_factors=None, max_cpu_loras=None, fully_sharded_loras=False, enable_prompt_adapter=False, max_prompt_adapters=1, max_prompt_adapter_token=0, device='auto', num_scheduler_steps=1, scheduler_delay_factor=0.0, enable_chunked_prefill=None, speculative_model=None, speculative_model_quantization=None, num_speculative_tokens=None, speculative_draft_tensor_parallel_size=None, speculative_max_model_len=None, speculative_disable_by_batch_size=None, ngram_prompt_lookup_max=None, ngram_prompt_lookup_min=None, spec_decoding_acceptance_method='rejection_sampler', typical_acceptance_sampler_posterior_threshold=None, typical_acceptance_sampler_posterior_alpha=None, disable_logprobs_during_spec_decoding=None, model_loader_extra_config=None, ignore_patterns=[], preemption_mode=None, served_model_name=['Meta-Llama-3.1-8B-Instruct'], qlora_adapter_name_or_path=None, otlp_traces_endpoint=None, collect_detailed_traces=None, disable_async_output_proc=False, override_neuron_config=None, disable_log_requests=False, max_log_len=None)
+INFO 02-23 02:32:32 api_server.py:162] Multiprocessing frontend to use ipc:///tmp/349ec1a6-50ec-40b0-aea7-6e3aa7dea0cc for RPC Path.
+INFO 02-23 02:32:32 api_server.py:178] Started engine process with PID 2932039
+INFO 02-23 02:32:39 config.py:904] Defaulting to use mp for distributed inference
+INFO 02-23 02:32:39 llm_engine.py:223] Initializing an LLM engine (v0.6.1.post1) with config: model='/map-vepfs/models/jiajun/Llama3/Meta-Llama-3.1-8B-Instruct', speculative_config=None, tokenizer='/map-vepfs/models/jiajun/Llama3/Meta-Llama-3.1-8B-Instruct', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config=None, rope_scaling=None, rope_theta=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=15000, download_dir=None, load_format=LoadFormat.AUTO, tensor_parallel_size=2, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto, quantization_param_path=None, device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='outlines'), observability_config=ObservabilityConfig(otlp_traces_endpoint=None, collect_model_forward_time=False, collect_model_execute_time=False), seed=0, served_model_name=Meta-Llama-3.1-8B-Instruct, use_v2_block_manager=False, num_scheduler_steps=1, enable_prefix_caching=False, use_async_output_proc=True)
+WARNING 02-23 02:32:39 multiproc_gpu_executor.py:56] Reducing Torch parallelism from 64 threads to 1 to avoid unnecessary CPU contention. Set OMP_NUM_THREADS in the external environment to tune this value as needed.
+INFO 02-23 02:32:39 custom_cache_manager.py:17] Setting Triton cache manager to: vllm.triton_utils.custom_cache_manager:CustomCacheManager
+[1;36m(VllmWorkerProcess pid=2932850)[0;0m INFO 02-23 02:32:40 multiproc_worker_utils.py:215] Worker ready; awaiting tasks
+[1;36m(VllmWorkerProcess pid=2932850)[0;0m INFO 02-23 02:32:40 utils.py:981] Found nccl from library libnccl.so.2
+INFO 02-23 02:32:40 utils.py:981] Found nccl from library libnccl.so.2
+[1;36m(VllmWorkerProcess pid=2932850)[0;0m INFO 02-23 02:32:40 pynccl.py:63] vLLM is using nccl==2.20.5
+INFO 02-23 02:32:40 pynccl.py:63] vLLM is using nccl==2.20.5
+INFO 02-23 02:32:42 custom_all_reduce_utils.py:242] reading GPU P2P access cache from /root/.cache/vllm/gpu_p2p_access_cache_for_2,3.json
+[1;36m(VllmWorkerProcess pid=2932850)[0;0m INFO 02-23 02:32:42 custom_all_reduce_utils.py:242] reading GPU P2P access cache from /root/.cache/vllm/gpu_p2p_access_cache_for_2,3.json
+INFO 02-23 02:32:42 shm_broadcast.py:235] vLLM message queue communication handle: Handle(connect_ip='127.0.0.1', local_reader_ranks=[1], buffer=<vllm.distributed.device_communicators.shm_broadcast.ShmRingBuffer object at 0x7f695e05d120>, local_subscribe_port=55193, remote_subscribe_port=None)
+INFO 02-23 02:32:42 model_runner.py:997] Starting to load model /map-vepfs/models/jiajun/Llama3/Meta-Llama-3.1-8B-Instruct...
+[1;36m(VllmWorkerProcess pid=2932850)[0;0m INFO 02-23 02:32:42 model_runner.py:997] Starting to load model /map-vepfs/models/jiajun/Llama3/Meta-Llama-3.1-8B-Instruct...
+Loading safetensors checkpoint shards:   0% Completed | 0/4 [00:00<?, ?it/s]
+Loading safetensors checkpoint shards:  25% Completed | 1/4 [00:05<00:16,  5.65s/it]
+Loading safetensors checkpoint shards:  50% Completed | 2/4 [00:11<00:11,  5.63s/it]
+Loading safetensors checkpoint shards:  75% Completed | 3/4 [00:12<00:03,  3.72s/it]
+Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:18<00:00,  4.47s/it]
+Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:18<00:00,  4.59s/it]
+
+INFO 02-23 02:33:01 model_runner.py:1008] Loading model weights took 7.4868 GB
+[1;36m(VllmWorkerProcess pid=2932850)[0;0m INFO 02-23 02:33:01 model_runner.py:1008] Loading model weights took 7.4868 GB
+INFO 02-23 02:33:04 distributed_gpu_executor.py:57] # GPU blocks: 66478, # CPU blocks: 4096
+[1;36m(VllmWorkerProcess pid=2932850)[0;0m ERROR 02-23 02:33:04 multiproc_worker_utils.py:226] Exception in worker VllmWorkerProcess while processing method initialize_cache: CUDA out of memory. Tried to allocate 2.03 GiB. GPU 1 has a total capacity of 79.35 GiB of which 1.22 GiB is free. Process 935162 has 44.73 GiB memory in use. Process 952170 has 33.38 GiB memory in use. Of the allocated memory 31.87 GiB is allocated by PyTorch, and 23.36 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables), Traceback (most recent call last):
+[1;36m(VllmWorkerProcess pid=2932850)[0;0m ERROR 02-23 02:33:04 multiproc_worker_utils.py:226]   File "/map-vepfs/miniconda3/envs/wcr/lib/python3.10/site-packages/vllm/executor/multiproc_worker_utils.py", line 223, in _run_worker_process
+[1;36m(VllmWorkerProcess pid=2932850)[0;0m ERROR 02-23 02:33:04 multiproc_worker_utils.py:226]     output = executor(*args, **kwargs)
+[1;36m(VllmWorkerProcess pid=2932850)[0;0m ERROR 02-23 02:33:04 multiproc_worker_utils.py:226]   File "/map-vepfs/miniconda3/envs/wcr/lib/python3.10/site-packages/vllm/worker/worker.py", line 265, in initialize_cache
+[1;36m(VllmWorkerProcess pid=2932850)[0;0m ERROR 02-23 02:33:04 multiproc_worker_utils.py:226]     self._init_cache_engine()
+[1;36m(VllmWorkerProcess pid=2932850)[0;0m ERROR 02-23 02:33:04 multiproc_worker_utils.py:226]   File "/map-vepfs/miniconda3/envs/wcr/lib/python3.10/site-packages/vllm/worker/worker.py", line 270, in _init_cache_engine
+[1;36m(VllmWorkerProcess pid=2932850)[0;0m ERROR 02-23 02:33:04 multiproc_worker_utils.py:226]     self.cache_engine = [
+[1;36m(VllmWorkerProcess pid=2932850)[0;0m ERROR 02-23 02:33:04 multiproc_worker_utils.py:226]   File "/map-vepfs/miniconda3/envs/wcr/lib/python3.10/site-packages/vllm/worker/worker.py", line 271, in <listcomp>
+[1;36m(VllmWorkerProcess pid=2932850)[0;0m ERROR 02-23 02:33:04 multiproc_worker_utils.py:226]     CacheEngine(self.cache_config, self.model_config,
+[1;36m(VllmWorkerProcess pid=2932850)[0;0m ERROR 02-23 02:33:04 multiproc_worker_utils.py:226]   File "/map-vepfs/miniconda3/envs/wcr/lib/python3.10/site-packages/vllm/worker/cache_engine.py", line 66, in __init__
+[1;36m(VllmWorkerProcess pid=2932850)[0;0m ERROR 02-23 02:33:04 multiproc_worker_utils.py:226]     self.gpu_cache = self._allocate_kv_cache(
+[1;36m(VllmWorkerProcess pid=2932850)[0;0m ERROR 02-23 02:33:04 multiproc_worker_utils.py:226]   File "/map-vepfs/miniconda3/envs/wcr/lib/python3.10/site-packages/vllm/worker/cache_engine.py", line 85, in _allocate_kv_cache
+[1;36m(VllmWorkerProcess pid=2932850)[0;0m ERROR 02-23 02:33:04 multiproc_worker_utils.py:226]     torch.zeros(kv_cache_shape,
+[1;36m(VllmWorkerProcess pid=2932850)[0;0m ERROR 02-23 02:33:04 multiproc_worker_utils.py:226] torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 2.03 GiB. GPU 1 has a total capacity of 79.35 GiB of which 1.22 GiB is free. Process 935162 has 44.73 GiB memory in use. Process 952170 has 33.38 GiB memory in use. Of the allocated memory 31.87 GiB is allocated by PyTorch, and 23.36 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+[1;36m(VllmWorkerProcess pid=2932850)[0;0m ERROR 02-23 02:33:04 multiproc_worker_utils.py:226] 
+INFO 02-23 02:33:05 model_runner.py:1309] Capturing the model for CUDA graphs. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI.
+INFO 02-23 02:33:05 model_runner.py:1313] CUDA graphs can take additional 1~3 GiB memory per GPU. If you are running out of memory, consider decreasing `gpu_memory_utilization` or enforcing eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+INFO 02-23 03:03:17 multiproc_worker_utils.py:123] Killing local vLLM worker processes
+Process SpawnProcess-1:
+Traceback (most recent call last):
+  File "/map-vepfs/miniconda3/envs/wcr/lib/python3.10/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/map-vepfs/miniconda3/envs/wcr/lib/python3.10/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/map-vepfs/miniconda3/envs/wcr/lib/python3.10/site-packages/vllm/entrypoints/openai/rpc/server.py", line 236, in run_rpc_server
+    server = AsyncEngineRPCServer(async_engine_args, usage_context, rpc_path)
+  File "/map-vepfs/miniconda3/envs/wcr/lib/python3.10/site-packages/vllm/entrypoints/openai/rpc/server.py", line 34, in __init__
+    self.engine = AsyncLLMEngine.from_engine_args(
+  File "/map-vepfs/miniconda3/envs/wcr/lib/python3.10/site-packages/vllm/engine/async_llm_engine.py", line 573, in from_engine_args
+    engine = cls(
+  File "/map-vepfs/miniconda3/envs/wcr/lib/python3.10/site-packages/vllm/engine/async_llm_engine.py", line 473, in __init__
+    self.engine = self._engine_class(*args, **kwargs)
+  File "/map-vepfs/miniconda3/envs/wcr/lib/python3.10/site-packages/vllm/engine/async_llm_engine.py", line 257, in __init__
+    super().__init__(*args, **kwargs)
+  File "/map-vepfs/miniconda3/envs/wcr/lib/python3.10/site-packages/vllm/engine/llm_engine.py", line 331, in __init__
+    self._initialize_kv_caches()
+  File "/map-vepfs/miniconda3/envs/wcr/lib/python3.10/site-packages/vllm/engine/llm_engine.py", line 473, in _initialize_kv_caches
+    self.model_executor.initialize_cache(num_gpu_blocks, num_cpu_blocks)
+  File "/map-vepfs/miniconda3/envs/wcr/lib/python3.10/site-packages/vllm/executor/distributed_gpu_executor.py", line 63, in initialize_cache
+    self._run_workers("initialize_cache",
+  File "/map-vepfs/miniconda3/envs/wcr/lib/python3.10/site-packages/vllm/executor/multiproc_gpu_executor.py", line 199, in _run_workers
+    driver_worker_output = driver_worker_method(*args, **kwargs)
+  File "/map-vepfs/miniconda3/envs/wcr/lib/python3.10/site-packages/vllm/worker/worker.py", line 266, in initialize_cache
+    self._warm_up_model()
+  File "/map-vepfs/miniconda3/envs/wcr/lib/python3.10/site-packages/vllm/worker/worker.py", line 282, in _warm_up_model
+    self.model_runner.capture_model(self.gpu_cache)
+  File "/map-vepfs/miniconda3/envs/wcr/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "/map-vepfs/miniconda3/envs/wcr/lib/python3.10/site-packages/vllm/worker/model_runner.py", line 1355, in capture_model
+    with self.attn_state.graph_capture(
+  File "/map-vepfs/miniconda3/envs/wcr/lib/python3.10/contextlib.py", line 142, in __exit__
+    next(self.gen)
+  File "/map-vepfs/miniconda3/envs/wcr/lib/python3.10/site-packages/vllm/distributed/parallel_state.py", line 823, in graph_capture
+    with get_tp_group().graph_capture() as context, get_pp_group(
+  File "/map-vepfs/miniconda3/envs/wcr/lib/python3.10/contextlib.py", line 142, in __exit__
+    next(self.gen)
+  File "/map-vepfs/miniconda3/envs/wcr/lib/python3.10/site-packages/vllm/distributed/parallel_state.py", line 237, in graph_capture
+    with torch.cuda.stream(stream), maybe_ca_context:
+  File "/map-vepfs/miniconda3/envs/wcr/lib/python3.10/contextlib.py", line 142, in __exit__
+    next(self.gen)
+  File "/map-vepfs/miniconda3/envs/wcr/lib/python3.10/site-packages/vllm/distributed/device_communicators/custom_all_reduce.py", line 180, in capture
+    self.register_graph_buffers()
+  File "/map-vepfs/miniconda3/envs/wcr/lib/python3.10/site-packages/vllm/distributed/device_communicators/custom_all_reduce.py", line 222, in register_graph_buffers
+    handles, offsets = self._gather_ipc_meta((bytes(handle), offset))
+  File "/map-vepfs/miniconda3/envs/wcr/lib/python3.10/site-packages/vllm/distributed/device_communicators/custom_all_reduce.py", line 200, in _gather_ipc_meta
+    dist.broadcast_object_list(all_data[i],
+  File "/map-vepfs/miniconda3/envs/wcr/lib/python3.10/site-packages/torch/distributed/c10d_logger.py", line 79, in wrapper
+    return func(*args, **kwargs)
+  File "/map-vepfs/miniconda3/envs/wcr/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py", line 2901, in broadcast_object_list
+    broadcast(object_sizes_tensor, src=src, group=group)
+  File "/map-vepfs/miniconda3/envs/wcr/lib/python3.10/site-packages/torch/distributed/c10d_logger.py", line 79, in wrapper
+    return func(*args, **kwargs)
+  File "/map-vepfs/miniconda3/envs/wcr/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py", line 2213, in broadcast
+    work.wait()
+RuntimeError: [../third_party/gloo/gloo/transport/tcp/unbound_buffer.cc:133] Timed out waiting 1800000ms for send operation to complete
+[rank0]:[W223 03:03:18.329719706 CudaIPCTypes.cpp:16] Producer process has been terminated before all shared CUDA tensors released. See Note [Sharing CUDA tensors]
+ERROR 02-23 03:03:24 api_server.py:188] RPCServer process died before responding to readiness probe
+/map-vepfs/miniconda3/envs/wcr/lib/python3.10/multiprocessing/resource_tracker.py:224: UserWarning: resource_tracker: There appear to be 1 leaked shared_memory objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '

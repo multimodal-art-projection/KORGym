@@ -1,0 +1,2128 @@
+INFO:     Started server process [56667]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:3034 (Press CTRL+C to quit)
+/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py:343: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+  state = request.dict()
+INFO:     127.0.0.1:44988 - "POST /verify HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/concurrency.py", line 37, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 2470, in run_sync_in_worker_thread
+    return await future
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 344, in api_verify
+    updated_state = verify(state)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 288, in verify
+    game = ENV_STORE[item["uid"]]
+KeyError: '83c1aa0b-d574-4cf1-832b-774ab7b91d05'
+/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py:328: PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.11/migration/
+  state = request.dict()
+INFO:     127.0.0.1:44994 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44998 - "POST /verify HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/concurrency.py", line 37, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 2470, in run_sync_in_worker_thread
+    return await future
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 344, in api_verify
+    updated_state = verify(state)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 288, in verify
+    game = ENV_STORE[item["uid"]]
+KeyError: '344832fe-456d-42f0-b11a-1ddcbe98c91e'
+INFO:     127.0.0.1:45002 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45006 - "POST /verify HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/concurrency.py", line 37, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 2470, in run_sync_in_worker_thread
+    return await future
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 344, in api_verify
+    updated_state = verify(state)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 288, in verify
+    game = ENV_STORE[item["uid"]]
+KeyError: '6fdf8f0b-f69f-4e87-be45-9cafb971953a'
+INFO:     127.0.0.1:45010 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45014 - "POST /verify HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/concurrency.py", line 37, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 2470, in run_sync_in_worker_thread
+    return await future
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 344, in api_verify
+    updated_state = verify(state)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 288, in verify
+    game = ENV_STORE[item["uid"]]
+KeyError: '432da398-873c-4744-90b7-ecf7c46a67e6'
+INFO:     127.0.0.1:45018 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45022 - "POST /verify HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/concurrency.py", line 37, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 2470, in run_sync_in_worker_thread
+    return await future
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 344, in api_verify
+    updated_state = verify(state)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 288, in verify
+    game = ENV_STORE[item["uid"]]
+KeyError: '0beb67a7-b831-4d5a-96cd-df39304e2c0d'
+INFO:     127.0.0.1:45026 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45030 - "POST /verify HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/concurrency.py", line 37, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 2470, in run_sync_in_worker_thread
+    return await future
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 344, in api_verify
+    updated_state = verify(state)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 288, in verify
+    game = ENV_STORE[item["uid"]]
+KeyError: '86cccf70-f763-4f6f-943a-147a245e4ef1'
+INFO:     127.0.0.1:45034 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45038 - "POST /verify HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/concurrency.py", line 37, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 2470, in run_sync_in_worker_thread
+    return await future
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 344, in api_verify
+    updated_state = verify(state)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 288, in verify
+    game = ENV_STORE[item["uid"]]
+KeyError: 'fb885f2d-a5ee-4740-9a74-7d7fc1897ec0'
+INFO:     127.0.0.1:45042 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45048 - "POST /verify HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/concurrency.py", line 37, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 2470, in run_sync_in_worker_thread
+    return await future
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 344, in api_verify
+    updated_state = verify(state)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 288, in verify
+    game = ENV_STORE[item["uid"]]
+KeyError: '6bbb4ba5-aab9-4ed7-805f-2dcea751adde'
+INFO:     127.0.0.1:45052 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45056 - "POST /verify HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/concurrency.py", line 37, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 2470, in run_sync_in_worker_thread
+    return await future
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 344, in api_verify
+    updated_state = verify(state)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 288, in verify
+    game = ENV_STORE[item["uid"]]
+KeyError: '43bc3bf4-f2e9-43d8-b993-44ecc46a88d3'
+INFO:     127.0.0.1:45060 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45064 - "POST /verify HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/concurrency.py", line 37, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 2470, in run_sync_in_worker_thread
+    return await future
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 344, in api_verify
+    updated_state = verify(state)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 288, in verify
+    game = ENV_STORE[item["uid"]]
+KeyError: 'd0cdc1c0-330f-4542-99e2-034671bceb0f'
+INFO:     127.0.0.1:45068 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45072 - "POST /verify HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/concurrency.py", line 37, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 2470, in run_sync_in_worker_thread
+    return await future
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 344, in api_verify
+    updated_state = verify(state)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 288, in verify
+    game = ENV_STORE[item["uid"]]
+KeyError: 'b9beb3fd-458d-407f-8734-46fe51d3e14d'
+INFO:     127.0.0.1:45076 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45080 - "POST /verify HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/concurrency.py", line 37, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 2470, in run_sync_in_worker_thread
+    return await future
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 344, in api_verify
+    updated_state = verify(state)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 288, in verify
+    game = ENV_STORE[item["uid"]]
+KeyError: 'a916544b-07b3-4e14-93ed-2669d05c59f4'
+INFO:     127.0.0.1:45084 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45088 - "POST /verify HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/concurrency.py", line 37, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 2470, in run_sync_in_worker_thread
+    return await future
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 344, in api_verify
+    updated_state = verify(state)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 288, in verify
+    game = ENV_STORE[item["uid"]]
+KeyError: 'd9c438f5-17a5-43e8-a67d-86fccd30958d'
+INFO:     127.0.0.1:45092 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45096 - "POST /verify HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/concurrency.py", line 37, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 2470, in run_sync_in_worker_thread
+    return await future
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 344, in api_verify
+    updated_state = verify(state)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 288, in verify
+    game = ENV_STORE[item["uid"]]
+KeyError: 'e45fdd16-fad3-40d9-9dc6-5ddb8ba2ad76'
+INFO:     127.0.0.1:45100 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45104 - "POST /verify HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/concurrency.py", line 37, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 2470, in run_sync_in_worker_thread
+    return await future
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 344, in api_verify
+    updated_state = verify(state)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 288, in verify
+    game = ENV_STORE[item["uid"]]
+KeyError: 'f733d5a6-de9d-427e-a2c0-b9c862b51b90'
+INFO:     127.0.0.1:45108 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45112 - "POST /verify HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/concurrency.py", line 37, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 2470, in run_sync_in_worker_thread
+    return await future
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 344, in api_verify
+    updated_state = verify(state)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 288, in verify
+    game = ENV_STORE[item["uid"]]
+KeyError: '9ccbb995-911b-495c-a595-51490b7c4c84'
+INFO:     127.0.0.1:45118 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45122 - "POST /verify HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/concurrency.py", line 37, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 2470, in run_sync_in_worker_thread
+    return await future
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 344, in api_verify
+    updated_state = verify(state)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 288, in verify
+    game = ENV_STORE[item["uid"]]
+KeyError: '24a117ca-01c0-408c-bde4-8f725ef5778e'
+INFO:     127.0.0.1:45126 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45130 - "POST /verify HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/concurrency.py", line 37, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 2470, in run_sync_in_worker_thread
+    return await future
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 344, in api_verify
+    updated_state = verify(state)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 288, in verify
+    game = ENV_STORE[item["uid"]]
+KeyError: '76c8985d-3498-40d2-9f21-32e331e27e0b'
+INFO:     127.0.0.1:45134 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45138 - "POST /verify HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/concurrency.py", line 37, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 2470, in run_sync_in_worker_thread
+    return await future
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 344, in api_verify
+    updated_state = verify(state)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 288, in verify
+    game = ENV_STORE[item["uid"]]
+KeyError: 'ec4bec8c-1c24-4ba5-8e22-1b698036b1c8'
+INFO:     127.0.0.1:45142 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45146 - "POST /verify HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/concurrency.py", line 37, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 2470, in run_sync_in_worker_thread
+    return await future
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 344, in api_verify
+    updated_state = verify(state)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 288, in verify
+    game = ENV_STORE[item["uid"]]
+KeyError: 'eff76bf0-9e1c-49e1-bee3-33127e138dc4'
+INFO:     127.0.0.1:45150 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46384 - "POST /verify HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/concurrency.py", line 37, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 2470, in run_sync_in_worker_thread
+    return await future
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 344, in api_verify
+    updated_state = verify(state)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 288, in verify
+    game = ENV_STORE[item["uid"]]
+KeyError: '83c1aa0b-d574-4cf1-832b-774ab7b91d05'
+INFO:     127.0.0.1:46388 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46392 - "POST /verify HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/concurrency.py", line 37, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 2470, in run_sync_in_worker_thread
+    return await future
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 344, in api_verify
+    updated_state = verify(state)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 288, in verify
+    game = ENV_STORE[item["uid"]]
+KeyError: '344832fe-456d-42f0-b11a-1ddcbe98c91e'
+INFO:     127.0.0.1:46396 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46400 - "POST /verify HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/concurrency.py", line 37, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 2470, in run_sync_in_worker_thread
+    return await future
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 344, in api_verify
+    updated_state = verify(state)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 288, in verify
+    game = ENV_STORE[item["uid"]]
+KeyError: '6fdf8f0b-f69f-4e87-be45-9cafb971953a'
+INFO:     127.0.0.1:46404 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46408 - "POST /verify HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/concurrency.py", line 37, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 2470, in run_sync_in_worker_thread
+    return await future
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 344, in api_verify
+    updated_state = verify(state)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 288, in verify
+    game = ENV_STORE[item["uid"]]
+KeyError: '432da398-873c-4744-90b7-ecf7c46a67e6'
+INFO:     127.0.0.1:46412 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46416 - "POST /verify HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/concurrency.py", line 37, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 2470, in run_sync_in_worker_thread
+    return await future
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 344, in api_verify
+    updated_state = verify(state)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 288, in verify
+    game = ENV_STORE[item["uid"]]
+KeyError: '0beb67a7-b831-4d5a-96cd-df39304e2c0d'
+INFO:     127.0.0.1:46420 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46424 - "POST /verify HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/concurrency.py", line 37, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 2470, in run_sync_in_worker_thread
+    return await future
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 344, in api_verify
+    updated_state = verify(state)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 288, in verify
+    game = ENV_STORE[item["uid"]]
+KeyError: '86cccf70-f763-4f6f-943a-147a245e4ef1'
+INFO:     127.0.0.1:46428 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46432 - "POST /verify HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/concurrency.py", line 37, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 2470, in run_sync_in_worker_thread
+    return await future
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 344, in api_verify
+    updated_state = verify(state)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 288, in verify
+    game = ENV_STORE[item["uid"]]
+KeyError: 'fb885f2d-a5ee-4740-9a74-7d7fc1897ec0'
+INFO:     127.0.0.1:46436 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46440 - "POST /verify HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/concurrency.py", line 37, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 2470, in run_sync_in_worker_thread
+    return await future
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 344, in api_verify
+    updated_state = verify(state)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 288, in verify
+    game = ENV_STORE[item["uid"]]
+KeyError: '6bbb4ba5-aab9-4ed7-805f-2dcea751adde'
+INFO:     127.0.0.1:46444 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46448 - "POST /verify HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/concurrency.py", line 37, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 2470, in run_sync_in_worker_thread
+    return await future
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 344, in api_verify
+    updated_state = verify(state)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 288, in verify
+    game = ENV_STORE[item["uid"]]
+KeyError: '43bc3bf4-f2e9-43d8-b993-44ecc46a88d3'
+INFO:     127.0.0.1:46452 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46456 - "POST /verify HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/concurrency.py", line 37, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 2470, in run_sync_in_worker_thread
+    return await future
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 344, in api_verify
+    updated_state = verify(state)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 288, in verify
+    game = ENV_STORE[item["uid"]]
+KeyError: 'd0cdc1c0-330f-4542-99e2-034671bceb0f'
+INFO:     127.0.0.1:46460 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46464 - "POST /verify HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/concurrency.py", line 37, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 2470, in run_sync_in_worker_thread
+    return await future
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 344, in api_verify
+    updated_state = verify(state)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 288, in verify
+    game = ENV_STORE[item["uid"]]
+KeyError: 'b9beb3fd-458d-407f-8734-46fe51d3e14d'
+INFO:     127.0.0.1:46468 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46472 - "POST /verify HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/concurrency.py", line 37, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 2470, in run_sync_in_worker_thread
+    return await future
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 344, in api_verify
+    updated_state = verify(state)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 288, in verify
+    game = ENV_STORE[item["uid"]]
+KeyError: 'a916544b-07b3-4e14-93ed-2669d05c59f4'
+INFO:     127.0.0.1:46476 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46480 - "POST /verify HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/concurrency.py", line 37, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 2470, in run_sync_in_worker_thread
+    return await future
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 344, in api_verify
+    updated_state = verify(state)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 288, in verify
+    game = ENV_STORE[item["uid"]]
+KeyError: 'd9c438f5-17a5-43e8-a67d-86fccd30958d'
+INFO:     127.0.0.1:46484 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46488 - "POST /verify HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/concurrency.py", line 37, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 2470, in run_sync_in_worker_thread
+    return await future
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 344, in api_verify
+    updated_state = verify(state)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 288, in verify
+    game = ENV_STORE[item["uid"]]
+KeyError: 'e45fdd16-fad3-40d9-9dc6-5ddb8ba2ad76'
+INFO:     127.0.0.1:46492 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46496 - "POST /verify HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/concurrency.py", line 37, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 2470, in run_sync_in_worker_thread
+    return await future
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 344, in api_verify
+    updated_state = verify(state)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 288, in verify
+    game = ENV_STORE[item["uid"]]
+KeyError: 'f733d5a6-de9d-427e-a2c0-b9c862b51b90'
+INFO:     127.0.0.1:46500 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46504 - "POST /verify HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/concurrency.py", line 37, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 2470, in run_sync_in_worker_thread
+    return await future
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 344, in api_verify
+    updated_state = verify(state)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 288, in verify
+    game = ENV_STORE[item["uid"]]
+KeyError: '9ccbb995-911b-495c-a595-51490b7c4c84'
+INFO:     127.0.0.1:46508 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46514 - "POST /verify HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/concurrency.py", line 37, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 2470, in run_sync_in_worker_thread
+    return await future
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 344, in api_verify
+    updated_state = verify(state)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 288, in verify
+    game = ENV_STORE[item["uid"]]
+KeyError: '24a117ca-01c0-408c-bde4-8f725ef5778e'
+INFO:     127.0.0.1:46518 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46522 - "POST /verify HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/concurrency.py", line 37, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 2470, in run_sync_in_worker_thread
+    return await future
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 344, in api_verify
+    updated_state = verify(state)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 288, in verify
+    game = ENV_STORE[item["uid"]]
+KeyError: '76c8985d-3498-40d2-9f21-32e331e27e0b'
+INFO:     127.0.0.1:46526 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46530 - "POST /verify HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/concurrency.py", line 37, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 2470, in run_sync_in_worker_thread
+    return await future
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 344, in api_verify
+    updated_state = verify(state)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 288, in verify
+    game = ENV_STORE[item["uid"]]
+KeyError: 'ec4bec8c-1c24-4ba5-8e22-1b698036b1c8'
+INFO:     127.0.0.1:46534 - "POST /print_board HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46538 - "POST /verify HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 187, in __call__
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 714, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 734, in app
+    await route.handle(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/fastapi/routing.py", line 214, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/starlette/concurrency.py", line 37, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 2470, in run_sync_in_worker_thread
+    return await future
+  File "/mnt/bd/reasoning-gym/miniconda3/envs/reasoning_gym/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 967, in run
+    result = context.run(func, *args)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 344, in api_verify
+    updated_state = verify(state)
+  File "/mnt/bd/reasoning-gym/lost+found/reasoningGYM/experiments/game_lib/40-CircleTheCat-Text/game_lib.py", line 288, in verify
+    game = ENV_STORE[item["uid"]]
+KeyError: 'eff76bf0-9e1c-49e1-bee3-33127e138dc4'
+INFO:     127.0.0.1:46542 - "POST /print_board HTTP/1.1" 200 OK
