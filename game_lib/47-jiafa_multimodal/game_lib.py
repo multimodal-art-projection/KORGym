@@ -29,7 +29,6 @@ The image shows:
 Rules:
 1. Same color represents same value
 2. Different colors represent different values
-3. All values are integers between -100 and 100
 """
 
 def convert_numpy_types(item):
