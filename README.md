@@ -6,12 +6,12 @@
 <p align="center">
   <a href="https://github.com/multimodal-art-projection/KORGym/stargazers">
     <img src="https://img.shields.io/github/stars/multimodal-art-projection/KORGym?style=social"></a>
-  <a href="https://razor233.github.io/KORGym/">
+  <a href="https://razor233.github.io/KORGYM_HomePage/">
     <img src="https://img.shields.io/badge/KORGym-Project Page-green"></a>
-  <a href="https://razor233.github.io/KORGym/#leaderboard">
+  <a href="https://razor233.github.io/KORGYM_HomePage/#leaderboard">
     <img src="https://img.shields.io/badge/KORGym-LeaderBoard-red"></a>
   <br>
-  <a href="https://razor233.github.io/KORGym/#Game Library">
+  <a href="https://razor233.github.io/KORGYM_HomePage/#Game Library">
     <img src="https://img.shields.io/badge/KORGym-Game Library-purple"></a>
     <a href="https://huggingface.co/multimodal-art-projection/KORGym">
     <img src="https://img.shields.io/badge/KORGym-Hugging Face-orange"></a>
